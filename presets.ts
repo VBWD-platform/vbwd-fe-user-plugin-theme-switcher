@@ -34,7 +34,7 @@ export const themePresets: ThemePreset[] = [
       '--vbwd-border-color': '#dddddd',
       '--vbwd-border-light': '#eeeeee',
       '--vbwd-card-shadow': '0 2px 5px rgba(0, 0, 0, 0.05)',
-      // Taro plugin color variables
+      // Tarot plugin color variables
       '--color-primary': '#3498db',
       '--color-primary-dark': '#2980b9',
       '--color-primary-light': '#5dade2',
@@ -94,7 +94,7 @@ export const themePresets: ThemePreset[] = [
       '--vbwd-border-color': '#374151',
       '--vbwd-border-light': '#2d3748',
       '--vbwd-card-shadow': '0 2px 5px rgba(0, 0, 0, 0.3)',
-      // Taro plugin color variables
+      // Tarot plugin color variables
       '--color-primary': '#60a5fa',
       '--color-primary-dark': '#3b82f6',
       '--color-primary-light': '#93c5fd',
@@ -154,7 +154,7 @@ export const themePresets: ThemePreset[] = [
       '--vbwd-border-color': '#d1d5db',
       '--vbwd-border-light': '#e5e7eb',
       '--vbwd-card-shadow': '0 2px 5px rgba(0, 0, 0, 0.05)',
-      // Taro plugin color variables
+      // Tarot plugin color variables
       '--color-primary': '#059669',
       '--color-primary-dark': '#047857',
       '--color-primary-light': '#1f9b80',
@@ -214,7 +214,7 @@ export const themePresets: ThemePreset[] = [
       '--vbwd-border-color': '#cbd5e1',
       '--vbwd-border-light': '#e2e8f0',
       '--vbwd-card-shadow': '0 2px 5px rgba(0, 0, 0, 0.05)',
-      // Taro plugin color variables
+      // Tarot plugin color variables
       '--color-primary': '#0284c7',
       '--color-primary-dark': '#0369a1',
       '--color-primary-light': '#0ea5e9',
@@ -274,7 +274,7 @@ export const themePresets: ThemePreset[] = [
       '--vbwd-border-color': '#d6d3d1',
       '--vbwd-border-light': '#e7e5e4',
       '--vbwd-card-shadow': '0 2px 5px rgba(0, 0, 0, 0.05)',
-      // Taro plugin color variables
+      // Tarot plugin color variables
       '--color-primary': '#ea580c',
       '--color-primary-dark': '#c2410c',
       '--color-primary-light': '#f97316',
