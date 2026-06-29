@@ -12,6 +12,32 @@ export interface ThemePreset {
   };
 }
 
+/**
+ * S109 — docs/marketing readability semantic vocabulary
+ * ----------------------------------------------------
+ * Docs & marketing pages (the CMS `.vbwd-page` content + the breadcrumb/menu
+ * chrome) read these `--vbwd-*` roles via `var(--vbwd-<role>, <light-fallback>)`.
+ * The light fallback in the CSS is always today's hardcoded value, so the
+ * default/light-background presets need NOT redefine them — the branded
+ * per-vertical look is preserved unchanged (decision 1: light is pixel-stable).
+ *
+ * Only DARK-background presets must supply theme-aware values, because a
+ * branded accent (e.g. #1d4ed8) or a light code tint is unreadable on a dark
+ * canvas. Today the only dark-background preset is `dark`; future dark themes
+ * should copy this block.
+ *
+ *   --vbwd-content-link        in-prose <a> colour      (fallback: branded accent-dark)
+ *   --vbwd-content-link-hover  in-prose <a>:hover        (fallback: branded accent-dark)
+ *   --vbwd-code-bg             inline `code` background  (fallback: branded accent-soft)
+ *   --vbwd-code-text           inline `code` text        (fallback: branded accent-dark)
+ *   --vbwd-table-border        table / cell borders      (fallback: --vbwd-border-color)
+ *   --vbwd-callout-bg          callout / CTA panel bg    (fallback: branded accent-soft)
+ *   --vbwd-hero-text           hero heading/lead colour  (fallback: #ffffff)
+ *
+ * The breadcrumb chrome reuses existing roles (no new vars): its base/separator
+ * map to `--vbwd-text-muted`, its current crumb to `--vbwd-text-body`, and its
+ * links to `--vbwd-color-primary` — all already defined in every preset.
+ */
 export const themePresets: ThemePreset[] = [
   {
     id: 'default',
@@ -94,6 +120,14 @@ export const themePresets: ThemePreset[] = [
       '--vbwd-border-color': '#374151',
       '--vbwd-border-light': '#2d3748',
       '--vbwd-card-shadow': '0 2px 5px rgba(0, 0, 0, 0.3)',
+      // S109 docs/marketing readability roles (dark canvas → theme-aware ink)
+      '--vbwd-content-link': '#93c5fd',
+      '--vbwd-content-link-hover': '#bfdbfe',
+      '--vbwd-code-bg': '#0f172a',
+      '--vbwd-code-text': '#e2e8f0',
+      '--vbwd-table-border': '#374151',
+      '--vbwd-callout-bg': 'rgba(96, 165, 250, 0.12)',
+      '--vbwd-hero-text': '#ffffff',
       // Tarot plugin color variables
       '--color-primary': '#60a5fa',
       '--color-primary-dark': '#3b82f6',
