@@ -15,7 +15,7 @@ const STORAGE_KEY = 'vbwd_theme';
 
 export const themeSwitcherPlugin: IPlugin = {
   name: 'theme-switcher',
-  version: '1.0.0',
+  version: '26.6',
   description: 'Dashboard color theme selector with preset themes',
   _active: false,
 
