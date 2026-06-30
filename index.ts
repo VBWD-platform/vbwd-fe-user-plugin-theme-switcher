@@ -47,6 +47,7 @@ export const themeSwitcherPlugin: IPlugin = {
     userNavRegistry.register({
       pluginName: 'theme-switcher',
       to: '/dashboard/appearance',
+      icon: 'appearance',
       labelKey: 'nav.appearance',
       testId: 'appearance-menu-item',
       placement: 'menu',
